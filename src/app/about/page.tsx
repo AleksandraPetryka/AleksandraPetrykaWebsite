@@ -1,7 +1,14 @@
 export default function About() {
+const title: string = 'About';
     return (
-        <main>
-        <h2>About</h2>
-        </main>
-    )
-}
+    <div>
+      <h2>{title}</h2>
+    </div>
+  );
+}   // end function About
+
+// end file: src\app\about\page.tsx
+
+
+
+// file: src\app\components\Navbar.tsx

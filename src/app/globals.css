@@ -3,6 +3,9 @@ body {
     color: rgb(107 114 128);
     margin: 32px;
 }
+a {
+    all: unset;
+}
 h1, h2 {
     font-weight: 700;
     font-size: 1.125rem;
@@ -91,4 +94,19 @@ button:hover {
     margin-bottom: 16px;
     font-size: 0.875rem;
     line-height: 24px;
+}
+.tools {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    background-color: rgb(213, 213, 235);
+}
+.card .tools {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 6px;
 }
