@@ -1,9 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
+import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+const rubik = Rubik({ subsets: ['latin'] })
 
-
+export const metadata = {
+    title: 'Aleksandra Petryka',
+    description: 'Aleksandra Petryka website',
+}
 export default function RootLayout({
   children,
 }: {
@@ -11,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rubik.className}>
+      <Navbar />
+      {children}
+      </body>
     </html>
   )
 }
